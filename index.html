@@ -121,7 +121,9 @@
   .hero-content { position: relative; z-index: 2; padding: 96px 0 64px; display: grid; gap: 32px; align-items: center; }
   .wordmark { font-size: clamp(3.4rem, 22vw, 5rem); font-weight: 700; line-height: 0.95; letter-spacing: -0.03em; margin: 6px 0 18px; }
   .hero-sub { font-size: clamp(1.05rem, 5vw, 1.25rem); font-weight: 500; margin-bottom: 14px; }
-  .hero-body { color: var(--muted); margin-bottom: 28px; font-size: 1rem; }
+  .hero-body { color: var(--muted); margin-bottom: 22px; font-size: 1rem; }
+  .hero-meta { display: inline-flex; align-items: center; gap: 10px; font-family: "Space Grotesk", sans-serif; font-weight: 600; font-size: 0.92rem; color: var(--text); margin: 0 0 26px; padding: 10px 16px; border: 1px solid rgba(255,138,61,0.45); border-radius: 999px; background: rgba(255,79,46,0.10); }
+  .hero-meta b { color: var(--secondary); font-weight: 700; }
   .hero-visual { position: relative; }
   .hero-visual .media { aspect-ratio: 1 / 1; transform: rotate(1.2deg); }
   .hero-glow { position: absolute; width: 260px; height: 260px; border-radius: 50%; background: var(--grad-warm); filter: blur(90px); opacity: 0.4; top: -40px; right: -40px; z-index: 0; animation: float 9s ease-in-out infinite; pointer-events: none; }
@@ -263,10 +265,11 @@
   <div class="hero-diagonal"></div>
   <div class="wrap hero-content">
     <div>
-      <span class="eyebrow">Nykter dans • Musik • Meditation • Community</span>
+      <span class="eyebrow">Nykter morgondans • Musik • Meditation • Community</span>
       <h1 class="wordmark gradient-text">SoulBeat</h1>
-      <p class="hero-sub">En dans- och musikupplevelse där vi möts i rörelse, närvaro och gemenskap.</p>
+      <p class="hero-sub">En nykter dans- och musikupplevelse där vi möts i rörelse, närvaro och gemenskap — och startar dagen i kroppen.</p>
       <p class="hero-body">SoulBeat är för dig som vill landa i kroppen, släppa prestation och dela energi med andra människor genom musik, rörelse och närvaro.</p>
+      <p class="hero-meta">📅 En <b>fredagsmorgon</b> i månaden &nbsp;·&nbsp; 🕖 kl <b>07–11</b></p>
       <div class="cta-row">
         <a href="#event" class="btn btn-primary">Kom på nästa event</a>
         <a href="#about" class="btn btn-ghost">Läs mer om konceptet</a>
@@ -290,7 +293,7 @@
       <span class="eyebrow">Vad är SoulBeat?</span>
       <h2 class="section-title">En plats för rörelse, närvaro och energi</h2>
       <p class="lead">SoulBeat är en nykter dans- och musikupplevelse där vi möts i rörelse, närvaro och gemenskap. Vi skapar en trygg och levande plats för fri dans, rytm, meditation och community.</p>
-      <p class="lead" style="margin-top:16px">Första eventet blir en enkel och varm testkväll där fokus ligger på känsla, musik, gemenskap och en trygg upplevelse.</p>
+      <p class="lead" style="margin-top:16px">Vi ses en <strong style="color:var(--text)">fredagsmorgon i månaden, kl 07–11</strong>. Ett sätt att starta dagen så bra som möjligt — fulladdad inför både jobbdagen och helgen.</p>
     </div>
     <div class="concept-card">
       <span class="eyebrow">Dans utan prestation</span>
@@ -337,13 +340,13 @@
       <div>
         <span class="eyebrow">Upplevelsen</span>
         <h2 class="section-title">Så kan ett SoulBeat-event se ut</h2>
-        <p class="lead">Från mjuk landning till gemenskap — en resa genom kvällen eller morgonen.</p>
+        <p class="lead">Från mjuk landning till gemenskap — en resa genom morgonen, klar inför dagen.</p>
       </div>
       <div class="media tint ring"><img src="bilder/louna-gong-meditation.webp" alt="Meditation framför gong i ceremoniellt rum" loading="lazy" decoding="async" /></div>
     </div>
     <div class="steps">
       <div class="step"><div class="step-num">1</div><div><h3>Landning</h3><p>Vi börjar med incheckning, mjuk landning och en trygg introduktion.</p></div></div>
-      <div class="step"><div class="step-num">2</div><div><h3>Öppningscirkel</h3><p>En enkel gemensam start där vi sätter tonen för kvällen eller morgonen.</p></div></div>
+      <div class="step"><div class="step-num">2</div><div><h3>Öppningscirkel</h3><p>En enkel gemensam start där vi sätter tonen för morgonen.</p></div></div>
       <div class="step"><div class="step-num">3</div><div><h3>Dansresa</h3><p>Fri dans till en genomtänkt spellista eller DJ-set.</p></div></div>
       <div class="step"><div class="step-num">4</div><div><h3>Meditation</h3><p>Vi landar tillsammans genom stillhet, andning eller guidning.</p></div></div>
       <div class="step"><div class="step-num">5</div><div><h3>Community</h3><p>Efteråt finns möjlighet att hänga kvar, prata, dricka te och mötas.</p></div></div>
@@ -373,11 +376,11 @@
     <div class="event">
       <span class="badge">Första event planeras</span>
       <h2 class="section-title" style="margin-top:16px">Nästa SoulBeat</h2>
-      <p class="lead">Vi håller det enkelt första gången. Fokus på bra musik, trygg känsla, bra ljud och tydlig kommunikation.</p>
+      <p class="lead">SoulBeat hålls en fredagsmorgon i månaden, kl 07–11. Du hinner landa, dansa och ladda — och ändå komma i tid till jobbet. Vi håller det enkelt: bra musik, trygg känsla, bra ljud.</p>
       <div class="event-grid">
-        <div class="event-item"><div class="label">Datum</div><div class="value tbd">Snart</div></div>
+        <div class="event-item"><div class="label">När</div><div class="value">1 fredag/mån</div></div>
+        <div class="event-item"><div class="label">Tid</div><div class="value">07–11</div></div>
         <div class="event-item"><div class="label">Plats</div><div class="value tbd">Snart</div></div>
-        <div class="event-item"><div class="label">Tid</div><div class="value tbd">Snart</div></div>
         <div class="event-item"><div class="label">Pris</div><div class="value tbd">Snart</div></div>
       </div>
       <div class="label" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Så ser kvällen ut</div>
@@ -420,6 +423,10 @@
     <span class="eyebrow">Vanliga frågor</span>
     <h2 class="section-title">Bra att veta</h2>
     <div class="faq">
+      <details>
+        <summary>När och hur ofta är det?</summary>
+        <p>SoulBeat hålls en fredagsmorgon i månaden, kl 07–11. Tanken är att starta dagen så bra som möjligt — du går därifrån fulladdad inför både jobbdagen och helgen.</p>
+      </details>
       <details>
         <summary>Behöver jag kunna dansa?</summary>
         <p>Nej. SoulBeat handlar om fri dans utan prestation — det finns inga steg att lära sig och inget rätt eller fel. Du rör dig som det känns.</p>
