@@ -122,8 +122,9 @@
   .wordmark { font-size: clamp(3.4rem, 22vw, 5rem); font-weight: 700; line-height: 0.95; letter-spacing: -0.03em; margin: 6px 0 18px; }
   .hero-sub { font-size: clamp(1.05rem, 5vw, 1.25rem); font-weight: 500; margin-bottom: 14px; }
   .hero-body { color: var(--muted); margin-bottom: 22px; font-size: 1rem; }
-  .hero-meta { display: inline-flex; align-items: center; gap: 10px; font-family: "Space Grotesk", sans-serif; font-weight: 600; font-size: 0.92rem; color: var(--text); margin: 0 0 26px; padding: 10px 16px; border: 1px solid rgba(255,138,61,0.45); border-radius: 999px; background: rgba(255,79,46,0.10); }
-  .hero-meta b { color: var(--secondary); font-weight: 700; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 2px 0 26px; }
+  .hm-chip { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; font-family: "Space Grotesk", sans-serif; font-weight: 600; font-size: 0.9rem; color: var(--text); padding: 9px 15px; border: 1px solid rgba(255,138,61,0.45); border-radius: 999px; background: rgba(255,79,46,0.10); }
+  .hm-chip b { color: var(--secondary); font-weight: 700; }
   .hero-visual { position: relative; }
   .hero-visual .media { aspect-ratio: 1 / 1; transform: rotate(1.2deg); }
   .hero-glow { position: absolute; width: 260px; height: 260px; border-radius: 50%; background: var(--grad-warm); filter: blur(90px); opacity: 0.4; top: -40px; right: -40px; z-index: 0; animation: float 9s ease-in-out infinite; pointer-events: none; }
@@ -269,7 +270,10 @@
       <h1 class="wordmark gradient-text">SoulBeat</h1>
       <p class="hero-sub">En nykter dans- och musikupplevelse där vi möts i rörelse, närvaro och gemenskap — och startar dagen i kroppen.</p>
       <p class="hero-body">SoulBeat är för dig som vill landa i kroppen, släppa prestation och dela energi med andra människor genom musik, rörelse och närvaro.</p>
-      <p class="hero-meta">📅 En <b>fredagsmorgon</b> i månaden &nbsp;·&nbsp; 🕖 kl <b>07–11</b></p>
+      <div class="hero-meta">
+        <span class="hm-chip">📅 En <b>fredagsmorgon</b> i månaden</span>
+        <span class="hm-chip">🕖 kl <b>07–11</b></span>
+      </div>
       <div class="cta-row">
         <a href="#event" class="btn btn-primary">Kom på nästa event</a>
         <a href="#about" class="btn btn-ghost">Läs mer om konceptet</a>
