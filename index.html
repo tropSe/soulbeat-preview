@@ -185,6 +185,11 @@
   .gallery .media { aspect-ratio: 3 / 4; }
   .gallery .media:first-child { grid-column: 1 / 3; aspect-ratio: 4 / 3; }
   .louna-portrait { aspect-ratio: 4 / 5; }
+  /* platshållare för kommande bilder */
+  .ph { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; aspect-ratio: 3 / 4; border-radius: var(--radius); border: 1.5px dashed rgba(255,138,61,0.5); background: rgba(255,79,46,0.06); padding: 16px; }
+  .ph .ph-ico { font-size: 1.9rem; }
+  .ph .ph-t { font-family: "Space Grotesk", sans-serif; font-weight: 700; color: var(--text); font-size: 0.92rem; }
+  .ph .ph-s { font-size: 0.78rem; color: var(--muted); }
   /* röster / citat */
   .quotes { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 32px; }
   .quote { position: relative; background: rgba(255,247,239,0.03); border: 1px solid rgba(255,247,239,0.08); border-radius: var(--radius); padding: 30px 28px 26px; }
@@ -450,6 +455,8 @@
       <div class="media tint ring"><img src="bilder/louna-dans-2.webp" alt="Louna dansar barfota på en altan" loading="lazy" decoding="async" /></div>
       <div class="media tint ring"><img src="bilder/louna-handpan.webp" alt="Louna spelar handpan i skogen" loading="lazy" decoding="async" /></div>
       <div class="media tint ring"><img src="bilder/louna-grounding.webp" alt="Louna vilar mot mossig sten" loading="lazy" decoding="async" /></div>
+      <div class="ph"><span class="ph-ico">📷</span><span class="ph-t">Louna &amp; Ponyo</span><span class="ph-s">bild kommer</span></div>
+      <div class="ph"><span class="ph-ico">🐾</span><span class="ph-t">Ponyo</span><span class="ph-s">bild kommer</span></div>
     </div>
   </div>
 </section>
