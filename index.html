@@ -142,6 +142,8 @@
   /* ============ LOUNA / TEAM ============ */
   .duo { display: grid; grid-template-columns: 1fr; gap: 30px; align-items: center; }
   .portrait { aspect-ratio: 4/5; }
+  .team-collage { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .team-collage .media { aspect-ratio: 3/4; }
 
   /* ============ EXPERIENCE ============ */
   .exp-head { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
@@ -489,12 +491,15 @@
 <!-- ===== TEAM / ALEXIS ===== -->
 <section class="pad" id="team">
   <div class="wrap duo">
-    <div class="media ring portrait"><img src="bilder/alexis-piippo.webp" alt="Alexis Piippo" loading="lazy" decoding="async" /></div>
+    <div class="team-collage">
+      <div class="media warm ring"><img src="bilder/alexis-piippo.webp" alt="Alexis Piippo ute i vinterljus" loading="lazy" decoding="async" /></div>
+      <div class="media warm ring"><img src="bilder/alexis-gitarr.webp" alt="Alexis spelar gitarr i motljus" loading="lazy" decoding="async" /></div>
+    </div>
     <div>
       <span class="eyebrow">Bakom SoulBeat</span>
-      <h2 class="title">Louna är stjärnan, <em>Alexis håller ramarna</em></h2>
-      <p class="lead big">SoulBeat skapas av Louna tillsammans med Alexis Piippo. På golvet är Louna stjärnan. Hon håller musiken, ljudresan och meditationen.</p>
-      <p class="lead" style="margin-top:16px">Alexis sköter allt runtomkring. Administration, marknadsföring, försäljning och dörrvakt. Allt så att Louna kan lysa och du kan landa tryggt.</p>
+      <h2 class="title">Två som skapar <em>SoulBeat tillsammans</em></h2>
+      <p class="lead big">SoulBeat är ett samarbete mellan Louna och Alexis Piippo. Louna bär musiken, ljudresan och meditationen. Alexis håller i det runtomkring, från planering och kommunikation till att möta dig i dörren.</p>
+      <p class="lead" style="margin-top:16px">Två olika roller, samma dröm. Ett varmt rum där du får landa och röra dig fritt.</p>
     </div>
   </div>
 </section>
