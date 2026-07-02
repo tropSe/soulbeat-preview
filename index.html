@@ -144,6 +144,19 @@
   .portrait { aspect-ratio: 4/5; }
   .team-collage { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .team-collage .media { aspect-ratio: 3/4; }
+  /* nyhetsbrev + följ */
+  .nl { max-width: 720px; }
+  .nl-form { display: flex; flex-direction: column; gap: 12px; max-width: 480px; margin-top: 22px; }
+  .nl-form input[type=email] { padding: 15px 18px; border-radius: 999px; border: 1px solid var(--line);
+    background: rgba(253,243,234,0.05); color: var(--text); font-size: 1rem; font-family: inherit; }
+  .nl-form input[type=email]::placeholder { color: rgba(205,178,167,0.7); }
+  .nl-form input[type=email]:focus { outline: none; border-color: var(--terra); }
+  .nl-form .hp { position: absolute; left: -9999px; }
+  .follow { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+  .follow a { display: inline-flex; align-items: center; gap: 9px; padding: 12px 22px; border-radius: 999px;
+    background: rgba(253,243,234,0.05); border: 1px solid var(--line); text-decoration: none; font-weight: 600; }
+  .follow a:hover { background: rgba(253,243,234,0.11); }
+  @media (min-width:760px){ .nl-form { flex-direction: row; } .nl-form input[type=email] { flex: 1; } .nl-form .btn { width: auto; } }
 
   /* ============ EXPERIENCE ============ */
   .exp-head { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
@@ -520,6 +533,27 @@
       <a class="cc" href="tel:+46709743778"><span class="ic">📞</span><span><span class="k">Telefon</span><br><span class="v">+46 709 74 37 78</span></span></a>
       <a class="cc" href="mailto:alexis@piippo.se"><span class="ic">✉️</span><span><span class="k">E-post</span><br><span class="v">alexis@piippo.se</span></span></a>
       <div class="cc"><span class="ic">🌱</span><span><span class="k">Arrangör</span><br><span class="v">Alexis Piippo</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NYHETSBREV + FÖLJ ===== -->
+<section class="pad" id="nyhetsbrev">
+  <div class="wrap nl">
+    <span class="eyebrow">Håll kontakten</span>
+    <h2 class="title">Missa ingen <em>morgon</em></h2>
+    <p class="lead">Lämna din e-post så hör vi av oss inför varje SoulBeat, med datum, plats och det du behöver veta. Du hittar oss också på Instagram och Facebook.</p>
+
+    <form name="nyhetsbrev" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="nl-form">
+      <input type="hidden" name="form-name" value="nyhetsbrev" />
+      <p class="hp"><label>Lämna tomt om du är människa: <input name="bot-field" /></label></p>
+      <input type="email" name="email" required placeholder="din@epost.se" aria-label="Din e-post" />
+      <button type="submit" class="btn btn-primary">Prenumerera</button>
+    </form>
+
+    <div class="follow">
+      <a href="#" data-social="instagram" aria-label="Louna på Instagram">📷 Louna på Instagram</a>
+      <a href="#" data-social="facebook" aria-label="Facebook events">📅 Facebook events</a>
     </div>
   </div>
 </section>
