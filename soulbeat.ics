@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//SoulBeat//Morning Dance//SV
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:SoulBeat – nykter morgondans
+X-WR-CALNAME:SoulBeat – morgondans
 X-WR-TIMEZONE:Europe/Stockholm
 X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
@@ -29,8 +29,8 @@ DTSTAMP:20260702T090000Z
 DTSTART;TZID=Europe/Stockholm:20260925T070000
 DTEND;TZID=Europe/Stockholm:20260925T110000
 RRULE:FREQ=MONTHLY;BYDAY=4FR
-SUMMARY:SoulBeat – nykter morgondans
-DESCRIPTION:En nykter morgon med fri dans, live-musik och meditation. Kl 07.00 guidad meditation. Kom och ga mellan 07.30 och 10.00. Loungen oppen efterat. Ta med vattenflaska, bekvama klader och nagot att sitta pa.
+SUMMARY:SoulBeat – morgondans
+DESCRIPTION:En morgon med fri dans, live-musik och meditation. Kl 07.00 guidad meditation. Kom och ga mellan 07.30 och 10.00. Loungen oppen efterat. Ta med vattenflaska, bekvama klader och nagot att sitta pa.
 LOCATION:Ungdomens hus, Malmo
 URL:https://tropse.github.io/soulbeat-preview/
 END:VEVENT
