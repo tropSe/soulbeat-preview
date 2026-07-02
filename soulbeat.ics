@@ -31,7 +31,7 @@ DTEND;TZID=Europe/Stockholm:20260925T110000
 RRULE:FREQ=MONTHLY;BYDAY=4FR
 SUMMARY:SoulBeat – nykter morgondans
 DESCRIPTION:En nykter morgon med fri dans, live-musik och meditation. Kl 07.00 guidad meditation. Kom och ga mellan 07.30 och 10.00. Loungen oppen efterat. Ta med vattenflaska, bekvama klader och nagot att sitta pa.
-LOCATION:Meddelas
+LOCATION:Ungdomens hus, Malmo
 URL:https://tropse.github.io/soulbeat-preview/
 END:VEVENT
 END:VCALENDAR

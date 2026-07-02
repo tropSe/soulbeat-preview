@@ -227,6 +227,12 @@
   .cal-date .time { margin-top: 8px; font-weight: 600; }
   .cal-body p { color: var(--muted); }
   .cal-actions { display: flex; flex-direction: column; gap: 11px; margin-top: 18px; }
+  .map { margin-top: 24px; border-radius: 22px; overflow: hidden; border: 1px solid var(--line); }
+  .map iframe { display: block; width: 100%; height: 300px; border: 0; }
+  .map-cap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 14px; }
+  .map-cap .place { font-family: "Fraunces", serif; font-size: 1.1rem; }
+  .map-cap .place small { display: block; color: var(--muted); font-family: "Inter", sans-serif; font-size: .86rem; }
+  @media (min-width: 760px) { .map iframe { height: 360px; } }
 
   /* ============ FEELING + GALLERY ============ */
   .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
@@ -488,7 +494,7 @@
       <div class="cal-body">
         <p>Premiär för SoulBeat. En nykter morgon med fri dans, levande musik och meditation. Kl 07.00 börjar vi med guidad meditation. Kom och gå mellan 07.30 och 10.00. Loungen är öppen efteråt.</p>
         <div class="cal-actions">
-          <a class="btn btn-primary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat%20nykter%20morgondans&dates=20260925T050000Z/20260925T090000Z&details=Nykter%20morgon%20med%20fri%20dans%2C%20musik%20och%20meditation.%20Kl%2007%20guidad%20meditation.%20Kom%20och%20g%C3%A5%2007.30-10.00.&location=Meddelas&recur=RRULE:FREQ%3DMONTHLY;BYDAY%3D4FR" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
+          <a class="btn btn-primary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat%20nykter%20morgondans&dates=20260925T050000Z/20260925T090000Z&details=Nykter%20morgon%20med%20fri%20dans%2C%20musik%20och%20meditation.%20Kl%2007%20guidad%20meditation.%20Kom%20och%20g%C3%A5%2007.30-10.00.&location=Ungdomens+hus%2C+Malm%C3%B6&recur=RRULE:FREQ%3DMONTHLY;BYDAY%3D4FR" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
           <a class="btn btn-soft" href="soulbeat.ics" download>Ladda ner (.ics)</a>
           <a class="btn btn-soft" href="webcal://tropse.github.io/soulbeat-preview/soulbeat.ics">Prenumerera på serien</a>
         </div>
@@ -500,7 +506,7 @@
       <div class="event-grid">
         <div class="ei"><div class="label">När</div><div class="value">Fre 25 sept</div></div>
         <div class="ei"><div class="label">Tid</div><div class="value">07–11</div></div>
-        <div class="ei"><div class="label">Plats</div><div class="value tbd">Snart</div></div>
+        <div class="ei"><div class="label">Plats</div><div class="value">Ungdomens hus</div></div>
         <div class="ei"><div class="label">Pris</div><div class="value tbd">Snart</div></div>
       </div>
       <div class="event-sub">
@@ -522,6 +528,14 @@
         </div>
       </div>
       <p class="lead" style="margin-top:20px;font-size:0.98rem">Vi pratar inte under dansen. Det är ett tryggt rum för eget utforskande. Efteråt är du varmt välkommen att stanna kvar i loungen.</p>
+    </div>
+
+    <div class="map">
+      <iframe title="Ungdomens hus i Malmö på kartan" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Ungdomens%20hus%20Malm%C3%B6&z=14&output=embed"></iframe>
+    </div>
+    <div class="map-cap">
+      <span class="place">📍 Ungdomens hus<small>Malmö</small></span>
+      <a class="btn btn-soft" href="https://www.google.com/maps/search/?api=1&query=Ungdomens+hus+Malm%C3%B6" target="_blank" rel="noopener">Vägbeskrivning</a>
     </div>
   </div>
 </section>
@@ -568,8 +582,8 @@
 <section class="pad" id="team">
   <div class="wrap duo">
     <div class="team-collage">
-      <div class="media warm ring"><img src="bilder/alexis-piippo.webp" alt="Alexis Piippo ute i vinterljus" loading="lazy" decoding="async" /></div>
-      <div class="media warm ring"><img src="bilder/alexis-gitarr.webp" alt="Alexis spelar gitarr i motljus" loading="lazy" decoding="async" /></div>
+      <div class="media warm ring"><img src="bilder/louna-dans-1.webp" alt="Louna dansar barfota" loading="lazy" decoding="async" /></div>
+      <div class="media warm ring"><img src="bilder/alexis-piippo.webp" alt="Alexis Piippo i vinterljus" loading="lazy" decoding="async" /></div>
     </div>
     <div>
       <span class="eyebrow">Bakom SoulBeat</span>
