@@ -12,9 +12,9 @@
 <meta property="og:locale" content="sv_SE" />
 <meta property="og:site_name" content="SoulBeat" />
 <meta property="og:image" content="https://soulbeat.se/bilder/og-soulbeat.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Louna och Ponyo dansar fritt i paviljongen" />
+<meta property="og:image:width" content="960" />
+<meta property="og:image:height" content="504" />
+<meta property="og:image:alt" content="Louna spelar shamantrumma i ett fält" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="canonical" href="https://soulbeat.se/" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -142,6 +142,12 @@
   .band img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
   .band::after { content:""; position:absolute; inset:0;
     background: radial-gradient(70% 60% at 50% 50%, rgba(23,16,15,0.25), rgba(23,16,15,0.72)); }
+  .band-text { min-height: 44vh; padding: 70px 0;
+    background:
+      radial-gradient(55% 70% at 20% 30%, rgba(224,113,79,0.22), transparent 65%),
+      radial-gradient(55% 70% at 82% 75%, rgba(201,138,182,0.22), transparent 65%),
+      var(--bg); }
+  .band-text::after { display: none; }
   .band-quote { position: relative; z-index: 2; text-align: center; padding: 0 24px; }
   .band-quote p { font-family: "Fraunces", serif; font-style: italic; font-weight: 400;
     font-size: clamp(1.6rem, 6vw, 2.6rem); line-height: 1.25; color: var(--text); max-width: 720px;
@@ -370,8 +376,7 @@
 </section>
 
 <!-- ===== BAND ===== -->
-<section class="band">
-  <img src="bilder/louna-ponyo-dans.webp" alt="Louna och Ponyo dansar fritt i paviljongen" loading="lazy" decoding="async" />
+<section class="band band-text">
   <div class="band-quote"><p>”Vi dansar för att komma hem till oss själva.”</p></div>
 </section>
 
@@ -622,7 +627,7 @@
 
 <!-- ===== ALEXIS DANSAR ===== -->
 <section class="band" style="min-height:64vh">
-  <img src="bilder/alexis-dans.webp" alt="Alexis dansar barfota och glad" loading="lazy" decoding="async" style="object-position:60% 40%" />
+  <img src="bilder/alexis-dans.webp" alt="Alexis dansar barfota och glad" loading="lazy" decoding="async" style="object-position:62% 12%" />
   <div class="band-quote"><p>”Alltid först ut på golvet.”</p></div>
 </section>
 
