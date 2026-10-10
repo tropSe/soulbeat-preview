@@ -1,0 +1,2 @@
+# Kalenderfiler kräver CRLF enligt RFC 5545
+*.ics text eol=crlf

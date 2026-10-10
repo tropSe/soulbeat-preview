@@ -3,6 +3,26 @@
   publish = "."
   command = ""
 
+# morningbeat.se (+ www) är alias på samma Netlify-sajt och skickas vidare till soulbeat.se
+[[redirects]]
+  from = "https://morningbeat.se/*"
+  to = "https://soulbeat.se/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.morningbeat.se/*"
+  to = "https://soulbeat.se/:splat"
+  status = 301
+  force = true
+
+# Kalenderfilen ska alltid hämtas färsk av prenumererande kalendrar
+[[headers]]
+  for = "/soulbeat.ics"
+  [headers.values]
+    Content-Type = "text/calendar; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
 [[headers]]
   for = "/*"
   [headers.values]
