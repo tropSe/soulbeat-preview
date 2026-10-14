@@ -28,6 +28,7 @@
   /* =========================================================
      SoulBeat — Gryning. Ljus morgon, solen går upp under förmiddagen.
      Rubriker: Instrument Serif. Brödtext: Manrope. Mobile first.
+     Märket "Solpuls": horisonten slår ett hjärtslag upp genom solen.
      Bilder visas aldrig större än de håller (se REDESIGN-BRIEF).
      ========================================================= */
   :root {
@@ -81,7 +82,7 @@
   /* ============ NAV ============ */
   .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; }
   .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: "Instrument Serif", serif; font-size: 1.5rem; line-height: 1; }
-  .logo svg { width: 34px; height: auto; }
+  .logo svg { width: 50px; height: auto; }
   .nav ul { list-style: none; display: flex; gap: 22px; }
   .nav li { display: none; }
   .nav li.keep { display: block; }
@@ -163,7 +164,7 @@
   .datecard .day-n { font-family: "Instrument Serif", serif; font-size: 6.4rem; line-height: .9; margin-top: 6px; }
   .datecard .mon { font-family: "Instrument Serif", serif; font-style: italic; font-size: 1.6rem; line-height: 1.1; }
   .datecard .tm { margin-top: 6px; color: var(--muted-on-ink); font-weight: 500; }
-  .datecard svg { display: block; width: 100%; height: auto; margin-top: 18px; }
+  .datecard svg { display: block; width: 62%; max-width: 190px; height: auto; margin: 20px auto 26px; }
   .ev-facts { list-style: none; display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
   .ev-facts li { padding: 14px 12px 14px 0; border-bottom: 1px solid var(--line); }
   .ev-facts small { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
@@ -220,7 +221,7 @@
   /* ============ FOOTER ============ */
   footer { background: var(--ink); color: var(--cream-on-ink); padding: 70px 0 34px; overflow: hidden; }
   .foot-cta { text-align: center; }
-  .foot-cta svg { width: 120px; height: auto; margin: 0 auto 18px; display: block; }
+  .foot-cta svg { width: 150px; height: auto; margin: 0 auto 20px; display: block; }
   .foot-cta h2 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: clamp(2.4rem, 10vw, 4rem); line-height: 1; }
   .foot-cta h2 i { color: var(--sun-1); }
   .foot-cta p { color: var(--muted-on-ink); margin-top: 12px; }
@@ -283,7 +284,7 @@
   <div class="wrap">
     <nav class="nav" aria-label="Huvudmeny">
       <a class="logo" href="#top" aria-label="SoulBeat, till början av sidan">
-        <svg viewBox="0 0 48 30" aria-hidden="true"><path d="M6 26 a18 18 0 0 1 36 0 Z" fill="#c8502c"/><path d="M0 27 H48" stroke="#2a1810" stroke-width="3"/><path d="M10 19 H38 M14 13 H34" stroke="#f7f0e6" stroke-width="2.2"/></svg>
+        <svg viewBox="0 0 120 72" aria-hidden="true"><defs><linearGradient id="lg-nav" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c08f"/><stop offset=".55" stop-color="#ec8a52"/><stop offset="1" stop-color="#c8502c"/></linearGradient></defs><path d="M18 60 a42 42 0 0 1 84 0 Z" fill="url(#lg-nav)"/><rect x="18" y="48" width="84" height="3" fill="#f7f0e6"/><path d="M3 60 H44 L50 60 L57 26 L65 70 L71 44 L75 60 H117" fill="none" stroke="#2a1810" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         SoulBeat
       </a>
       <ul>
@@ -433,7 +434,7 @@
         <div class="day-n">27</div>
         <div class="mon">november 2026</div>
         <div class="tm">kl 08–12</div>
-        <svg viewBox="0 0 300 80" aria-hidden="true"><defs><linearGradient id="dg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c08f"/><stop offset="1" stop-color="#c8502c"/></linearGradient></defs><path d="M60 80 a90 90 0 0 1 180 0 Z" fill="url(#dg)"/><rect y="46" width="300" height="4" fill="#2a1810"/><rect y="62" width="300" height="5" fill="#2a1810"/></svg>
+        <svg viewBox="0 0 120 72" aria-hidden="true"><defs><linearGradient id="lg-date" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c08f"/><stop offset=".55" stop-color="#ec8a52"/><stop offset="1" stop-color="#c8502c"/></linearGradient></defs><path d="M18 60 a42 42 0 0 1 84 0 Z" fill="url(#lg-date)"/><rect x="18" y="48" width="84" height="3" fill="#2a1810"/><path d="M3 60 H44 L50 60 L57 26 L65 70 L71 44 L75 60 H117" fill="none" stroke="#f7f0e6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
         <ul class="ev-facts">
@@ -550,7 +551,7 @@
 <footer>
   <div class="wrap">
     <div class="foot-cta">
-      <svg viewBox="0 0 120 60" aria-hidden="true"><defs><linearGradient id="fg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c08f"/><stop offset="1" stop-color="#c8502c"/></linearGradient></defs><path d="M10 58 a50 50 0 0 1 100 0 Z" fill="url(#fg)"/><rect y="38" width="120" height="3" fill="#2a1810"/><rect y="48" width="120" height="4" fill="#2a1810"/><rect y="58" width="120" height="2" fill="#f7f0e6"/></svg>
+      <svg viewBox="0 0 120 72" aria-hidden="true"><defs><linearGradient id="lg-foot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c08f"/><stop offset=".55" stop-color="#ec8a52"/><stop offset="1" stop-color="#c8502c"/></linearGradient></defs><path d="M18 60 a42 42 0 0 1 84 0 Z" fill="url(#lg-foot)"/><rect x="18" y="48" width="84" height="3" fill="#2a1810"/><path d="M3 60 H44 L50 60 L57 26 L65 70 L71 44 L75 60 H117" fill="none" stroke="#f7f0e6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <h2>Vi ses på <i>morgonen</i></h2>
       <p>Fredag 27 november, kl <span class="nw">08–12</span>, Ungdomens hus i Malmö.</p>
       <a href="#kalender" class="btn">Se kalendern</a>
