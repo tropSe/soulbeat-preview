@@ -25,15 +25,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:soulbeat-morning-series@soulbeat.se
-SEQUENCE:1
-DTSTAMP:20261010T120000Z
-DTSTART;TZID=Europe/Stockholm:20261127T070000
-DTEND;TZID=Europe/Stockholm:20261127T110000
+SEQUENCE:2
+DTSTAMP:20261014T120000Z
+DTSTART;TZID=Europe/Stockholm:20261127T080000
+DTEND;TZID=Europe/Stockholm:20261127T120000
 RRULE:FREQ=MONTHLY;BYDAY=4FR
 SUMMARY:SoulBeat – morgondans
-DESCRIPTION:En morgon med fri dans\, live-musik och meditation. Kl 07.00 gu
- idad meditation. Kom och gå mellan 07.30 och 10.00. Loungen öppen efter
- åt. Ta med vattenflaska\, bekväma kläder och något att sitta på.
+DESCRIPTION:En morgon med fri dans\, live-musik och meditation\, kl 08–12
+ . Upplägget formas efter månadens tema. Ta med vattenflaska\, bekväma k
+ läder och något att sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
