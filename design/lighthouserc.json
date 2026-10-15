@@ -1,0 +1,20 @@
+{
+  "ci": {
+    "collect": {
+      "url": ["https://soulbeat.se/"],
+      "numberOfRuns": 3,
+      "settings": { "onlyCategories": ["performance"] }
+    },
+    "assert": {
+      "assertions": {
+        "resource-summary:font:size": ["error", { "maxNumericValue": 71680 }],
+        "resource-summary:font:count": ["error", { "maxNumericValue": 3 }],
+        "resource-summary:third-party:count": ["warn", { "maxNumericValue": 3 }],
+        "largest-contentful-paint": ["warn", { "maxNumericValue": 2500 }],
+        "first-contentful-paint": ["warn", { "maxNumericValue": 1800 }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.05 }],
+        "total-blocking-time": ["warn", { "maxNumericValue": 100 }]
+      }
+    }
+  }
+}
