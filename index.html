@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>SoulBeat – morgondans med levande musik i Malmö</title>
-<meta name="description" content="SoulBeat är en morgon med fri dans, levande musik och meditation på Ungdomens hus i Malmö. En fredagsmorgon i månaden, kl 08–12. Premiär fredag 27 november 2026." />
+<meta name="description" content="SoulBeat är en nykter morgon med fri dans, levande musik och meditation på Ungdomens hus i Malmö. En morgon i månaden, kl 08–11. Premiär fredag 27 november 2026. Pris 269 kr." />
 <meta property="og:title" content="SoulBeat – morgondans med levande musik i Malmö" />
-<meta property="og:description" content="En morgon med fri dans, levande musik och meditation. En fredagsmorgon i månaden, kl 08–12. Premiär 27 november." />
+<meta property="og:description" content="En nykter morgon med fri dans, levande musik och meditation. En morgon i månaden, kl 08–11. Premiär 27 november." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://soulbeat.se/" />
 <meta property="og:locale" content="sv_SE" />
@@ -105,7 +105,7 @@
   .sun { position: absolute; left: 50%; bottom: 0; width: 150%; max-width: 640px; transform: translateX(-50%); }
   .hero-arch { position: relative; width: min(280px, 74%); aspect-ratio: 3/4; border: 6px solid var(--bg); border-bottom: 0;
     box-shadow: 0 30px 60px -30px rgba(42,24,16,.5); }
-  .hero-arch img { object-position: 40% 40%; }
+  .hero-arch img { object-position: 80% 50%; }
   .horizon { height: 10px; background: var(--ink); }
 
   /* ============ OM ============ */
@@ -169,7 +169,7 @@
   .ev-facts li { padding: 14px 12px 14px 0; border-bottom: 1px solid var(--line); }
   .ev-facts small { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
   .ev-facts strong { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.45rem; line-height: 1.15; }
-  .ev-facts .tbd { color: var(--rust); font-style: italic; }
+  .ev-facts span { display: block; font-size: .86rem; line-height: 1.35; color: var(--muted); margin-top: 2px; }
   .cal-text { color: var(--muted); margin-top: 20px; max-width: 600px; }
   .cal-actions { display: grid; gap: 10px; margin-top: 22px; }
   .bring { display: grid; gap: 26px; margin-top: 44px; }
@@ -252,7 +252,7 @@
   }
   @media (min-width: 960px) {
     .hero-grid { grid-template-columns: 1.1fr .9fr; align-items: end; gap: 40px; padding-top: 40px; }
-    .hero-text { padding-bottom: 70px; }
+    .hero-text { padding-bottom: 70px; position: relative; z-index: 1; }
     .hero-art { min-height: 600px; }
     .sun { width: 640px; }
     .hero-arch { width: 360px; }
@@ -296,14 +296,15 @@
     </nav>
     <div class="hero-grid">
       <div class="hero-text">
-        <p class="kicker">Morgondans i Malmö</p>
+        <p class="kicker">Nykter morgondans i Malmö</p>
         <h1 class="wordmark">Soul<i>Beat</i></h1>
         <p class="tagline">Börja dagen i kroppen, inte i huvudet.</p>
-        <p class="intro">En morgon med fri dans, levande musik och meditation. En fredagsmorgon i månaden.</p>
+        <p class="intro">En nykter morgon med fri dans, levande musik och meditation. En morgon i månaden.</p>
         <ul class="facts">
           <li><b>Premiär</b><span>fredag 27 november 2026</span></li>
-          <li><b>Tid</b><span>08–12</span></li>
+          <li><b>Tid</b><span>08–11</span></li>
           <li><b>Plats</b><span>Ungdomens hus, Malmö</span></li>
+          <li><b>Pris</b><span>269 kr, eller 420 kr om du vill bidra mer</span></li>
         </ul>
         <div class="ctas">
           <a class="btn btn-main" href="#kalender">Kom på premiären</a>
@@ -316,7 +317,7 @@
           <mask id="sm"><rect width="560" height="280" fill="#fff"/><g fill="#000"><rect y="150" width="560" height="5"/><rect y="186" width="560" height="7"/><rect y="220" width="560" height="9"/><rect y="252" width="560" height="11"/></g></mask></defs>
           <path d="M0 280 a280 280 0 0 1 560 0 Z" fill="url(#sg)" mask="url(#sm)"/>
         </svg>
-        <div class="arch hero-arch"><img src="bilder/louna-shamantrumma.webp" alt="Louna spelar shamantrumma i ett fält" width="960" height="960" fetchpriority="high" /></div>
+        <div class="arch hero-arch"><img src="bilder/alexis-dans.webp" alt="Alexis dansar barfota och glad" width="1400" height="1049" fetchpriority="high" /></div>
       </div>
     </div>
   </div>
@@ -332,14 +333,15 @@
       <p class="kicker">Vad är SoulBeat?</p>
       <h2 class="h2">En morgon för <i>rörelse</i> och närvaro</h2>
       <p class="lead big">Inspirerat av ekstatisk dans. Ingen prestation, inga steg att lära sig. Du rör dig som det känns.</p>
-      <p class="lead">SoulBeat är fri dans till levande musik, och meditation. Vi ses en fredagsmorgon i månaden, kl <span class="nw">08–12</span>, och du går därifrån redo för både jobbet och helgen.</p>
+      <p class="lead">SoulBeat är nykter, fri dans till levande musik, och meditation. Vi ses en morgon i månaden, kl <span class="nw">08–11</span>, och du går därifrån redo för både jobbet och helgen.</p>
     </div>
     <ul class="pillars">
       <li><span class="sun-dot" style="background:var(--sun-1)"></span><span><b>Fri dans</b><span class="t">Inget rätt eller fel.</span></span></li>
-      <li><span class="sun-dot" style="background:#f2a46f"></span><span><b>Levande musik</b><span class="t">Shamantrumma, kora, handpan och gong.</span></span></li>
+      <li><span class="sun-dot" style="background:#f2a46f"></span><span><b>Levande musik</b><span class="t">Shamantrumma, kora, handpan, gong och levande trummor.</span></span></li>
       <li><span class="sun-dot" style="background:var(--sun-2)"></span><span><b>Meditation</b><span class="t">Stillhet och andning.</span></span></li>
+      <li><span class="sun-dot" style="background:#dc6c3e"></span><span><b>Helt nyktert</b><span class="t">Energin kommer från musiken, rörelsen och gemenskapen.</span></span></li>
       <li><span class="sun-dot" style="background:var(--sun-3)"></span><span><b>Tyst dansgolv</b><span class="t">Vi pratar inte under dansen.</span></span></li>
-      <li><span class="sun-dot" style="background:var(--rust)"></span><span><b>Lounge efteråt</b><span class="t">Te och mingel.</span></span></li>
+      <li><span class="sun-dot" style="background:var(--rust)"></span><span><b>Lounge efteråt</b><span class="t">Te, nötter, frukt, vindruvor och dadlar.</span></span></li>
     </ul>
   </div>
 </section>
@@ -351,7 +353,7 @@
     <div>
       <p class="kicker">Musiken och guidningen</p>
       <h2 class="h2">Louna håller <i>rummet</i></h2>
-      <p class="lead">Louna leder ljudresan och meditationen. Med shamantrumma, kora, handpan och gong bär musiken dig från första steget till sista andetaget.</p>
+      <p class="lead">Louna leder ljudresan och meditationen. Med shamantrumma, kora, handpan, gong och levande trummor bär musiken dig från första steget till sista andetaget.</p>
       <ul class="instr">
         <li><div class="arch"><img src="bilder/louna-ponyo-ramtrummor.webp" alt="Louna spelar trumma" width="1400" height="1120" loading="lazy" decoding="async" style="object-position:30% 50%" /></div><span class="name">Shamantrumma</span></li>
         <li><div class="arch"><img src="bilder/louna-kora.webp" alt="Louna spelar kora omgiven av grönska" width="1304" height="1304" loading="lazy" decoding="async" /></div><span class="name">Kora</span></li>
@@ -369,7 +371,7 @@
       <div>
         <p class="kicker">Upplevelsen</p>
         <h2 class="h2">Från landning<br>till <i>lounge</i></h2>
-        <p class="lead">En morgon kl <span class="nw">08–12</span>. Du kommer och går som du vill. Upplägget i detalj formas efter månadens tema.</p>
+        <p class="lead">En morgon kl <span class="nw">08–11</span>. Du kommer och går som du vill. Upplägget i detalj formas efter månadens tema.</p>
       </div>
       <div class="arch small-arch"><img src="bilder/louna-gong-meditation.webp" alt="Meditation framför gong i ett ljust rum" width="1050" height="1400" loading="lazy" decoding="async" /></div>
     </div>
@@ -384,7 +386,7 @@
       <li><div class="dot"><svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="21" fill="#dc6c3e"/></svg></div>
         <div><span class="step">Mot slutet</span><h3>Meditation</h3><p>Vi landar i stillhet, andning och guidning.</p></div></li>
       <li><div class="dot"><svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="21" fill="#c8502c"/></svg></div>
-        <div><span class="step">Efteråt</span><h3>Loungen</h3><p>Vi hänger kvar, minglar och dricker te.</p></div></li>
+        <div><span class="step">Efteråt</span><h3>Loungen</h3><p>Vi hänger kvar, minglar och äter något gott till teet.</p></div></li>
     </ol>
   </div>
 </section>
@@ -426,30 +428,49 @@
   <div class="wrap">
     <p class="kicker">Kalender och plats</p>
     <h2 class="h2">Boka in nästa <i>morgon</i></h2>
-    <p class="lead">Premiär fredag 27 november. Sedan ses vi den fjärde fredagen varje månad. Prenumerera så dyker varje datum upp i din kalender.</p>
+    <p class="lead">Premiär fredag 27 november. Sedan ses vi en morgon i månaden, och vårens datum är preliminära. Prenumerera så dyker varje datum upp i din kalender.</p>
 
     <div class="cal">
       <div class="datecard">
         <div class="dow">Fredag</div>
         <div class="day-n">27</div>
         <div class="mon">november 2026</div>
-        <div class="tm">kl 08–12</div>
+        <div class="tm">kl 08–11</div>
         <svg viewBox="0 0 120 72" aria-hidden="true"><defs><linearGradient id="lg-date" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c08f"/><stop offset=".55" stop-color="#ec8a52"/><stop offset="1" stop-color="#c8502c"/></linearGradient></defs><path d="M18 60 a42 42 0 0 1 84 0 Z" fill="url(#lg-date)"/><rect x="18" y="48" width="84" height="3" fill="#2a1810"/><path d="M3 60 H44 L50 60 L57 26 L65 70 L71 44 L75 60 H117" fill="none" stroke="#f7f0e6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
         <ul class="ev-facts">
           <li><small>När</small><strong>Fre 27 nov</strong></li>
-          <li><small>Tid</small><strong>08–12</strong></li>
+          <li><small>Tid</small><strong>08–11</strong></li>
           <li><small>Plats</small><strong>Ungdomens hus</strong></li>
-          <li><small>Pris</small><strong class="tbd">Snart</strong></li>
+          <li><small>Pris</small><strong>269 kr</strong><span>eller 420 kr om du vill bidra mer</span></li>
         </ul>
-        <p class="cal-text">Premiär för SoulBeat. En morgon med fri dans, levande musik och meditation, kl <span class="nw">08–12</span>. Upplägget formas efter månadens tema, och vi avslutar i loungen.</p>
+        <p class="cal-text">Premiär för SoulBeat. En nykter morgon med fri dans, levande musik och meditation, kl <span class="nw">08–11</span>, i festsalen på Ungdomens hus. Upplägget formas efter månadens tema, och vi avslutar i loungen.</p>
         <div class="cal-actions">
-          <a class="btn btn-main" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat%20morgondans&dates=20261127T070000Z/20261127T110000Z&details=En%20morgon%20med%20fri%20dans%2C%20musik%20och%20meditation.%20Kl%2008%E2%80%9312%2C%20uppl%C3%A4gget%20f%C3%B6ljer%20m%C3%A5nadens%20tema.&location=Ungdomens+hus%2C+Malm%C3%B6&recur=RRULE:FREQ%3DMONTHLY;BYDAY%3D4FR" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
+          <a class="btn btn-main" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat%20morgondans&dates=20261127T070000Z/20261127T100000Z&details=En%20nykter%20morgon%20med%20fri%20dans%2C%20levande%20musik%20och%20meditation.%20Kl%2008%E2%80%9311%2C%20uppl%C3%A4gget%20f%C3%B6ljer%20m%C3%A5nadens%20tema.%20Pris%20269%20kr%2C%20eller%20420%20kr%20om%20du%20vill%20bidra%20mer.&location=Ungdomens+hus%2C+Malm%C3%B6" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
           <a class="btn btn-line" href="https://www.facebook.com/events/1452131226860801/" target="_blank" rel="noopener">Evenemanget på Facebook</a>
           <a class="btn btn-line" href="soulbeat.ics" download>Ladda ner (.ics)</a>
           <a class="btn btn-line" href="webcal://soulbeat.se/soulbeat.ics">Prenumerera på serien</a>
         </div>
+      </div>
+    </div>
+
+    <div class="bring">
+      <div>
+        <h3>Kommande morgnar</h3>
+        <ul>
+          <li><span class="sun-dot"></span>Fredag 27 november 2026, premiär</li>
+          <li><span class="sun-dot"></span>Fredag 22 och lördag 23 januari, preliminärt</li>
+          <li><span class="sun-dot"></span>Fredag 19 och lördag 20 februari, preliminärt</li>
+          <li><span class="sun-dot"></span>Lördag 27 mars, preliminärt</li>
+          <li><span class="sun-dot"></span>Fredag 23 april, preliminärt</li>
+          <li><span class="sun-dot"></span>Fredag 30 april, preliminärt</li>
+          <li><span class="sun-dot"></span>Fredag 28 maj, preliminärt</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Om datumen</h3>
+        <p class="cal-text" style="margin-top:0">Premiären är bekräftad. Datumen efter den är preliminära tills vi bekräftar dem, och fler kommer. Alla morgnar går kl <span class="nw">08–11</span>.</p>
       </div>
     </div>
 
@@ -466,8 +487,8 @@
         <h3>Bra att veta</h3>
         <ul>
           <li><span class="sun-dot"></span>Vi pratar inte under dansen</li>
-          <li><span class="sun-dot"></span>Kom och gå som du vill mellan 08 och 12</li>
-          <li><span class="sun-dot"></span>Efteråt finns te och mingel i loungen</li>
+          <li><span class="sun-dot"></span>Kom och gå som du vill mellan 08 och 11</li>
+          <li><span class="sun-dot"></span>Efteråt finns lounge med te, nötter, frukt, vindruvor och dadlar</li>
         </ul>
       </div>
     </div>
@@ -476,7 +497,7 @@
       <iframe title="Ungdomens hus i Malmö på kartan" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Ungdomens%20hus%20Malm%C3%B6&z=14&output=embed"></iframe>
     </div>
     <div class="map-cap">
-      <span class="place">Ungdomens hus<small>Malmö</small></span>
+      <span class="place">Ungdomens hus<small>Festsalen, Malmö</small></span>
       <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Ungdomens+hus+Malm%C3%B6" target="_blank" rel="noopener">Vägbeskrivning</a>
     </div>
   </div>
@@ -491,13 +512,14 @@
       <p class="lead">Hittar du inte svaret? Ring eller mejla Alexis, kontaktuppgifterna finns längre ner.</p>
     </div>
     <div class="faq">
-      <details><summary>När och hur ofta är det?</summary><p>En fredagsmorgon i månaden, den fjärde fredagen, kl <span class="nw">08–12</span>. Premiär fredag 27 november 2026. Du startar dagen med energi och är redo för både jobbet och helgen.</p></details>
+      <details><summary>När och hur ofta är det?</summary><p>En morgon i månaden, kl <span class="nw">08–11</span>. Premiär fredag 27 november 2026, och vårens datum är preliminära: se Kalender. Du startar dagen med energi och är redo för både jobbet och helgen.</p></details>
       <details><summary>Behöver jag kunna dansa?</summary><p>Nej. Här dansar vi fritt, utan prestation. Det finns inga steg att lära sig och inget rätt eller fel. Du rör dig som det känns.</p></details>
+      <details><summary>Vad kostar det?</summary><p>269 kr, eller 420 kr om du vill bidra mer.</p></details>
       <details><summary>Är det nyktert?</summary><p>Ja, helt nyktert. Energin kommer från musiken, rörelsen och gemenskapen.</p></details>
       <details><summary>Vad ska jag ta med?</summary><p>Vattenflaska, bekväma kläder och något att sitta på, en yogamatta eller kudde.</p></details>
       <details><summary>Får man prata under dansen?</summary><p>Nej, vi pratar inte under själva dansen. Det är ett tryggt rum för eget utforskande. Efteråt hänger vi kvar och pratar i loungen.</p></details>
-      <details><summary>Måste jag stanna hela tiden?</summary><p>Nej, du kommer och går som du vill mellan 08 och 12. Upplägget i detalj formas efter månadens tema.</p></details>
-      <details><summary>Kan jag komma själv?</summary><p>Absolut. Du behöver inte känna någon. Efter dansen finns loungen med te och mingel, och där är det lätt att mötas.</p></details>
+      <details><summary>Måste jag stanna hela tiden?</summary><p>Nej, du kommer och går som du vill mellan 08 och 11. Upplägget i detalj formas efter månadens tema.</p></details>
+      <details><summary>Kan jag komma själv?</summary><p>Absolut. Du behöver inte känna någon. Efter dansen finns loungen med te, nötter, frukt, vindruvor och dadlar, och där är det lätt att mötas.</p></details>
     </div>
   </div>
 </section>
@@ -553,11 +575,11 @@
     <div class="foot-cta">
       <svg viewBox="0 0 120 72" aria-hidden="true"><defs><linearGradient id="lg-foot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c08f"/><stop offset=".55" stop-color="#ec8a52"/><stop offset="1" stop-color="#c8502c"/></linearGradient></defs><path d="M18 60 a42 42 0 0 1 84 0 Z" fill="url(#lg-foot)"/><rect x="18" y="48" width="84" height="3" fill="#2a1810"/><path d="M3 60 H44 L50 60 L57 26 L65 70 L71 44 L75 60 H117" fill="none" stroke="#f7f0e6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <h2>Vi ses på <i>morgonen</i></h2>
-      <p>Fredag 27 november, kl <span class="nw">08–12</span>, Ungdomens hus i Malmö.</p>
+      <p>Fredag 27 november, kl <span class="nw">08–11</span>, Ungdomens hus i Malmö.</p>
       <a href="#kalender" class="btn">Se kalendern</a>
     </div>
     <div class="foot-bottom">
-      <span>SoulBeat. Fri dans, levande musik och meditation.</span>
+      <span>SoulBeat. Nykter morgondans med fri dans, levande musik och meditation.</span>
       <span><a href="mailto:alexis@piippo.se">alexis@piippo.se</a> · <a href="tel:+46709743778">+46 709 74 37 78</a></span>
       <span>soulbeat.se · © <span id="year">2026</span> SoulBeat</span>
     </div>
