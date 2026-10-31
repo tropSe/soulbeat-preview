@@ -40,6 +40,22 @@ LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
+UID:soulbeat-20261218@soulbeat.se
+SEQUENCE:0
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=Europe/Stockholm:20261218T080000
+DTEND;TZID=Europe/Stockholm:20261218T110000
+SUMMARY:SoulBeat – morgondans (preliminärt)
+STATUS:TENTATIVE
+DESCRIPTION:Preliminärt datum, fredag 18 december 2026. En nykter morgon m
+ ed fri dans\, levande musik och meditation\, kl 08–11, i festsalen på U
+ ngdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra mer. Upplägget 
+ formas efter månadens tema. Ta med vattenflaska\, bekväma kläder och n
+ ågot att sitta på.
+LOCATION:Ungdomens hus\, Malmö
+URL:https://soulbeat.se/
+END:VEVENT
+BEGIN:VEVENT
 UID:soulbeat-20270122@soulbeat.se
 SEQUENCE:4
 DTSTAMP:20261023T140000Z
