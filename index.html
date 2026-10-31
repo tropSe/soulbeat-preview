@@ -127,6 +127,8 @@
   /* ============ UPPLEVELSEN ============ */
   .exp-top { display: grid; gap: 26px; align-items: end; }
   .small-arch { width: 170px; aspect-ratio: 3/4; }
+  .exp-photos { display: flex; gap: 12px; align-items: end; }
+  .exp-photos .small-arch { width: 150px; }
   .day { list-style: none; margin-top: 44px; }
   .day li { display: grid; grid-template-columns: 58px 1fr; gap: 16px; padding: 18px 0; border-top: 1px solid var(--line); }
   .dot { width: 46px; height: 46px; position: relative; }
@@ -261,6 +263,7 @@
     .louna-photo { width: 320px; justify-self: center; }
     .exp-top { grid-template-columns: 1fr auto; }
     .small-arch { width: 220px; }
+    .exp-photos .small-arch { width: 200px; }
     .day { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; margin-top: 64px; }
     .day li { grid-template-columns: 1fr; border-top: 0; padding: 0; gap: 10px; }
     .dot { height: 120px; width: 100%; border-bottom: 1px solid var(--line); }
@@ -373,7 +376,10 @@
         <h2 class="h2">Från landning<br>till <i>lounge</i></h2>
         <p class="lead">En morgon kl <span class="nw">08–11</span>. Du kommer och går som du vill. Upplägget i detalj formas efter månadens tema.</p>
       </div>
-      <div class="arch small-arch"><img src="bilder/louna-gong-meditation.webp" alt="Meditation framför gong i ett ljust rum" width="1050" height="1400" loading="lazy" decoding="async" /></div>
+      <div class="exp-photos">
+        <div class="arch small-arch"><img src="bilder/louna-gong-meditation.webp" alt="Meditation framför gong i ett ljust rum" width="1050" height="1400" loading="lazy" decoding="async" /></div>
+        <div class="arch small-arch"><img src="bilder/eld-munharpa.webp" alt="Alexis Piippo spelar munharpa med slutna ögon i eldens sken" width="1600" height="1068" loading="lazy" decoding="async" style="object-position:62% 50%" /></div>
+      </div>
     </div>
 
     <ol class="day">
@@ -529,7 +535,7 @@
   <div class="wrap team">
     <div class="team-photos">
       <figure><div class="arch"><img src="bilder/louna-dans-1.webp" alt="Louna dansar barfota" width="1050" height="1400" loading="lazy" decoding="async" /></div><figcaption>Louna<span>Musik, ljudresa och meditation</span></figcaption></figure>
-      <figure><div class="arch"><img src="bilder/alexis-piippo.webp" alt="Alexis Piippo i vinterljus" width="1050" height="1400" loading="lazy" decoding="async" /></div><figcaption>Alexis<span>Planering, kommunikation och värd i dörren</span></figcaption></figure>
+      <figure><div class="arch"><img src="bilder/alexis-gitarr-frida.webp" alt="Alexis Piippo spelar akustisk gitarr med slutna ögon" width="1050" height="1575" loading="lazy" decoding="async" style="object-position:50% 35%" /></div><figcaption>Alexis<span>Planering, kommunikation och värd i dörren</span><span>Foto: <a href="https://www.fridaaugust.se/" target="_blank" rel="noopener">Frida Augustsson</a></span></figcaption></figure>
     </div>
     <div>
       <p class="kicker">Bakom SoulBeat</p>
