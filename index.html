@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>SoulBeat – ljudresa, meditation och dans i Malmö</title>
-<meta name="description" content="SoulBeat är en nykter morgon på Ungdomens hus i Malmö: en levande ljudresa med Louna, meditation och därefter fri dans. En morgon i månaden, kl 08–11. Premiär fredag 27 november 2026. Pris 269 kr." />
+<meta name="description" content="SoulBeat är en nykter morgon på Ungdomens hus i Malmö: en levande ljudresa med Louna, meditation och därefter fri dans. En morgon i månaden, kl 08–11. Premiär fredag 27 november 2026. Du väljer pris efter inkomst." />
 <meta property="og:title" content="SoulBeat – ljudresa, meditation och dans i Malmö" />
 <meta property="og:description" content="En nykter morgon med levande ljudresa, meditation och därefter fri dans. En morgon i månaden, kl 08–11. Premiär 27 november." />
 <meta property="og:type" content="website" />
@@ -174,6 +174,19 @@
   .ev-facts span { display: block; font-size: .86rem; line-height: 1.35; color: var(--muted); margin-top: 2px; }
   .cal-text { color: var(--muted); margin-top: 20px; max-width: 600px; }
   .cal-actions { display: grid; gap: 10px; margin-top: 22px; }
+
+  /* Biljetter: två färdiga block. Läget styrs av data-biljetter på <body>. */
+  body[data-biljetter="tidig"] .tix-ordinarie,
+  body[data-biljetter="ordinarie"] .tix-tidig { display: none; }
+  .tix { margin-top: 24px; padding: 22px; border-radius: 22px; background: var(--bg); border: 1px solid var(--line); }
+  .tix-head { font-family: "Instrument Serif", serif; font-size: 1.6rem; line-height: 1.15; }
+  .tix-sub { color: var(--muted); margin-top: 4px; }
+  .tix-btns { display: grid; gap: 10px; margin-top: 16px; }
+  .tix-note { color: var(--muted); font-size: .86rem; line-height: 1.5; margin-top: 14px; }
+  .tix-note a, .faq .tix-note a { color: var(--ink); }
+  .faq .tix { margin: 0 0 20px; max-width: 640px; }
+  .faq .tix p { padding: 0; }
+  .faq .tix-btns:first-child { margin-top: 0; }
   .bring { display: grid; gap: 26px; margin-top: 44px; }
   .bring h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.7rem; line-height: 1.1; margin-bottom: 10px; }
   .bring ul { list-style: none; display: grid; gap: 8px; }
@@ -246,6 +259,7 @@
     .who { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
     .ev-facts { grid-template-columns: repeat(4, 1fr); }
     .cal-actions { display: flex; flex-wrap: wrap; }
+    .tix-btns { display: flex; flex-wrap: wrap; }
     .bring { grid-template-columns: 1fr 1fr; gap: 40px; }
     .map iframe { height: 380px; }
     .contact-grid { grid-template-columns: 1fr 1fr; gap: 60px; }
@@ -280,7 +294,8 @@
   }
 </style>
 </head>
-<body>
+<!-- Biljettläge: "tidig" visar knappen för 77 kr. När de 20 tidiga är sålda, ändra till "ordinarie" (169, 269 och 420 kr). -->
+<body data-biljetter="tidig">
 
 <!-- ===== HERO ===== -->
 <header class="hero" id="top">
@@ -307,7 +322,7 @@
           <li><b>Premiär</b><span>fredag 27 november 2026</span></li>
           <li><b>Tid</b><span>08–11</span></li>
           <li><b>Plats</b><span>Ungdomens hus, Malmö</span></li>
-          <li><b>Pris</b><span>269 kr, eller 420 kr om du vill bidra mer</span></li>
+          <li><b>Pris</b><span>77 kr för de första 20, sedan 169, 269 eller 420 kr efter inkomst</span></li>
         </ul>
         <div class="ctas">
           <a class="btn btn-main" href="#kalender">Kom på premiären</a>
@@ -449,11 +464,29 @@
           <li><small>När</small><strong>Fre 27 nov</strong></li>
           <li><small>Tid</small><strong>08–11</strong></li>
           <li><small>Plats</small><strong>Ungdomens hus</strong></li>
-          <li><small>Pris</small><strong>269 kr</strong><span>eller 420 kr om du vill bidra mer</span></li>
+          <li><small>Pris</small><strong>169–420 kr</strong><span>du väljer efter inkomst, de första 20 för 77 kr</span></li>
         </ul>
         <p class="cal-text">Premiär för SoulBeat. En nykter morgon med levande ljudresa, meditation och därefter fri dans, kl <span class="nw">08–11</span>, i festsalen på Ungdomens hus. Upplägget formas efter månadens tema, och vi avslutar i loungen.</p>
+
+        <div class="tix tix-tidig" id="biljetter">
+          <p class="tix-head">Tidiga biljetter</p>
+          <p class="tix-sub">De första 20 biljetterna kostar 77 kr.</p>
+          <div class="tix-btns"><a class="btn btn-main" href="https://buy.stripe.com/test_28EcN51iO265dax6yCcEw01?locale=sv">Tidig biljett 77 kr</a></div>
+          <p class="tix-note">När de är slut väljer du pris efter inkomst: 169, 269 eller 420 kr. Alla priser inkluderar 6&nbsp;% moms. Betalningen visas som Tropse AB. <a href="kopvillkor.html">Köpvillkor</a></p>
+        </div>
+        <div class="tix tix-ordinarie">
+          <p class="tix-head">Välj pris efter inkomst</p>
+          <p class="tix-sub">De tidiga biljetterna är slut. Du väljer själv vad du betalar, och alla får samma morgon.</p>
+          <div class="tix-btns">
+            <a class="btn btn-main" href="https://buy.stripe.com/test_5kQfZh2mScKJ3zXcX0cEw02?locale=sv">Biljett 169 kr</a>
+            <a class="btn btn-main" href="https://buy.stripe.com/test_7sYeVdf9EbGFc6t5uycEw00?locale=sv">Biljett 269 kr</a>
+            <a class="btn btn-main" href="https://buy.stripe.com/test_eVqfZh7Hc2654E1e14cEw03?locale=sv">Biljett 420 kr</a>
+          </div>
+          <p class="tix-note">Alla priser inkluderar 6&nbsp;% moms. Betalningen visas som Tropse AB. <a href="kopvillkor.html">Köpvillkor</a></p>
+        </div>
+
         <div class="cal-actions">
-          <a class="btn btn-main" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat&dates=20261127T070000Z/20261127T100000Z&details=En%20nykter%20morgon%20med%20levande%20ljudresa%2C%20meditation%20och%20d%C3%A4refter%20fri%20dans.%20Kl%2008%E2%80%9311%2C%20uppl%C3%A4gget%20f%C3%B6ljer%20m%C3%A5nadens%20tema.%20Pris%20269%20kr%2C%20eller%20420%20kr%20om%20du%20vill%20bidra%20mer.&location=Ungdomens+hus%2C+Malm%C3%B6" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
+          <a class="btn btn-line" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat&dates=20261127T070000Z/20261127T100000Z&details=En%20nykter%20morgon%20med%20levande%20ljudresa%2C%20meditation%20och%20d%C3%A4refter%20fri%20dans.%20Kl%2008%E2%80%9311%2C%20uppl%C3%A4gget%20f%C3%B6ljer%20m%C3%A5nadens%20tema.%20Biljett%2077%20kr%20f%C3%B6r%20de%20f%C3%B6rsta%2020%2C%20sedan%20169%2C%20269%20eller%20420%20kr%20efter%20inkomst.%20Biljetter%20p%C3%A5%20soulbeat.se.&location=Ungdomens+hus%2C+Malm%C3%B6" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
           <a class="btn btn-line" href="https://www.facebook.com/events/1452131226860801/" target="_blank" rel="noopener">Evenemanget på Facebook</a>
           <a class="btn btn-line" href="soulbeat.ics" download>Ladda ner (.ics)</a>
           <a class="btn btn-line" href="webcal://soulbeat.se/soulbeat.ics">Prenumerera på serien</a>
@@ -521,7 +554,22 @@
     <div class="faq">
       <details><summary>När och hur ofta är det?</summary><p>En morgon i månaden, kl <span class="nw">08–11</span>. Premiär fredag 27 november 2026, och vårens datum är preliminära: se Kalender. Du startar dagen med energi och är redo för både jobbet och helgen.</p></details>
       <details><summary>Behöver jag kunna dansa?</summary><p>Nej. Här dansar vi fritt, utan prestation. Det finns inga steg att lära sig och inget rätt eller fel. Du rör dig som det känns.</p></details>
-      <details><summary>Vad kostar det?</summary><p>269 kr, eller 420 kr om du vill bidra mer.</p></details>
+      <details><summary>Vad kostar det?</summary><p>De första 20 biljetterna kostar 77 kr. Sedan väljer du själv mellan 169, 269 och 420 kr efter inkomst. Alla får samma morgon, och alla priser inkluderar 6&nbsp;% moms.</p>
+        <div class="tix tix-tidig">
+          <div class="tix-btns"><a class="btn btn-main" href="https://buy.stripe.com/test_28EcN51iO265dax6yCcEw01?locale=sv">Tidig biljett 77 kr</a></div>
+          <p class="tix-note">Betalningen visas som Tropse AB. <a href="kopvillkor.html">Köpvillkor</a></p>
+        </div>
+        <div class="tix tix-ordinarie">
+          <p class="tix-sub">De tidiga biljetterna är slut.</p>
+          <div class="tix-btns">
+            <a class="btn btn-main" href="https://buy.stripe.com/test_5kQfZh2mScKJ3zXcX0cEw02?locale=sv">Biljett 169 kr</a>
+            <a class="btn btn-main" href="https://buy.stripe.com/test_7sYeVdf9EbGFc6t5uycEw00?locale=sv">Biljett 269 kr</a>
+            <a class="btn btn-main" href="https://buy.stripe.com/test_eVqfZh7Hc2654E1e14cEw03?locale=sv">Biljett 420 kr</a>
+          </div>
+          <p class="tix-note">Betalningen visas som Tropse AB. <a href="kopvillkor.html">Köpvillkor</a></p>
+        </div>
+      </details>
+      <details><summary>Kan jag ångra köpet?</summary><p>Ångerrätten gäller inte biljetter till ett evenemang med fast datum. Vad som gäller vid återbud, och om vi skulle ställa in, står i <a href="kopvillkor.html">köpvillkoren</a>.</p></details>
       <details><summary>Är det nyktert?</summary><p>Ja, helt nyktert. Energin kommer från musiken, rörelsen och gemenskapen.</p></details>
       <details><summary>Vad ska jag ta med?</summary><p>Vattenflaska, bekväma kläder och något att sitta på, en yogamatta eller kudde.</p></details>
       <details><summary>Får man prata under dansen?</summary><p>Nej, vi pratar inte under själva dansen. Det är ett tryggt rum för eget utforskande. Efteråt hänger vi kvar och pratar i loungen.</p></details>
@@ -588,6 +636,7 @@
     <div class="foot-bottom">
       <span>SoulBeat. En nykter morgon med levande ljudresa, meditation och fri dans.</span>
       <span><a href="mailto:hej@piippo.se">hej@piippo.se</a> · <a href="tel:+46709743778">+46 709 74 37 78</a></span>
+      <span>Arrangör och säljare: Tropse AB, org.nr 559065-7325 · <a href="kopvillkor.html">Köpvillkor</a> · <a href="kopvillkor.html#integritet">Integritet</a></span>
       <span>soulbeat.se · © <span id="year">2026</span> SoulBeat</span>
     </div>
   </div>
