@@ -25,15 +25,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:soulbeat-morning-series@soulbeat.se
-SEQUENCE:6
-DTSTAMP:20261104T180000Z
+SEQUENCE:7
+DTSTAMP:20261106T120000Z
 DTSTART;TZID=Europe/Stockholm:20261127T080000
 DTEND;TZID=Europe/Stockholm:20261127T110000
 SUMMARY:SoulBeat, premiär
 STATUS:CONFIRMED
 DESCRIPTION:Premiären är bekräftad. En nykter morgon med levande ljudres
  a\, meditation och därefter fri dans\, kl 08–11, i festsalen på Ungdom
- ens hus. Biljett 77 kr för de första 20\, sedan 169\, 269 eller 420 kr e
+ ens hus. Biljett 99 kr för de första 20\, sedan 169\, 269 eller 420 kr e
  fter inkomst. Biljetter på soulbeat.se. Upplägget formas efter månadens
   tema. Ta med vattenflaska\, bekväma kläder och något att sitta på.
 LOCATION:Ungdomens hus\, Malmö
