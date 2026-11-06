@@ -41,145 +41,145 @@ URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
 UID:soulbeat-20261218@soulbeat.se
-SEQUENCE:1
-DTSTAMP:20261104T120000Z
+SEQUENCE:2
+DTSTAMP:20261106T180000Z
 DTSTART;TZID=Europe/Stockholm:20261218T080000
 DTEND;TZID=Europe/Stockholm:20261218T110000
 SUMMARY:SoulBeat (preliminärt)
 STATUS:TENTATIVE
 DESCRIPTION:Preliminärt datum, fredag 18 december 2026. En nykter morgon m
  ed levande ljudresa\, meditation och därefter fri dans\, kl 08–11, i fe
- stsalen på Ungdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra mer
- . Upplägget formas efter månadens tema. Ta med vattenflaska\, bekväma k
- läder och något att sitta på.
+ stsalen på Ungdomens hus. Pris 169–420 kr efter inkomst. Upplägget for
+ mas efter månadens tema. Ta med vattenflaska\, bekväma kläder och någo
+ t att sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
 UID:soulbeat-20270122@soulbeat.se
-SEQUENCE:5
-DTSTAMP:20261104T120000Z
+SEQUENCE:6
+DTSTAMP:20261106T180000Z
 DTSTART;TZID=Europe/Stockholm:20270122T080000
 DTEND;TZID=Europe/Stockholm:20270122T110000
 SUMMARY:SoulBeat (preliminärt)
 STATUS:TENTATIVE
 DESCRIPTION:Preliminärt datum, fredag 22 januari 2027. En nykter morgon me
  d levande ljudresa\, meditation och därefter fri dans\, kl 08–11, i fes
- tsalen på Ungdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra mer.
-  Upplägget formas efter månadens tema. Ta med vattenflaska\, bekväma kl
- äder och något att sitta på.
+ tsalen på Ungdomens hus. Pris 169–420 kr efter inkomst. Upplägget form
+ as efter månadens tema. Ta med vattenflaska\, bekväma kläder och något
+  att sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
 UID:soulbeat-20270123@soulbeat.se
-SEQUENCE:5
-DTSTAMP:20261104T120000Z
+SEQUENCE:6
+DTSTAMP:20261106T180000Z
 DTSTART;TZID=Europe/Stockholm:20270123T080000
 DTEND;TZID=Europe/Stockholm:20270123T110000
 SUMMARY:SoulBeat (preliminärt)
 STATUS:TENTATIVE
 DESCRIPTION:Preliminärt datum, lördag 23 januari 2027. En nykter morgon m
  ed levande ljudresa\, meditation och därefter fri dans\, kl 08–11, i fe
- stsalen på Ungdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra mer
- . Upplägget formas efter månadens tema. Ta med vattenflaska\, bekväma k
- läder och något att sitta på.
+ stsalen på Ungdomens hus. Pris 169–420 kr efter inkomst. Upplägget for
+ mas efter månadens tema. Ta med vattenflaska\, bekväma kläder och någo
+ t att sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
 UID:soulbeat-20270219@soulbeat.se
-SEQUENCE:5
-DTSTAMP:20261104T120000Z
+SEQUENCE:6
+DTSTAMP:20261106T180000Z
 DTSTART;TZID=Europe/Stockholm:20270219T080000
 DTEND;TZID=Europe/Stockholm:20270219T110000
 SUMMARY:SoulBeat (preliminärt)
 STATUS:TENTATIVE
 DESCRIPTION:Preliminärt datum, fredag 19 februari 2027. En nykter morgon m
  ed levande ljudresa\, meditation och därefter fri dans\, kl 08–11, i fe
- stsalen på Ungdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra mer
- . Upplägget formas efter månadens tema. Ta med vattenflaska\, bekväma k
- läder och något att sitta på.
+ stsalen på Ungdomens hus. Pris 169–420 kr efter inkomst. Upplägget for
+ mas efter månadens tema. Ta med vattenflaska\, bekväma kläder och någo
+ t att sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
 UID:soulbeat-20270220@soulbeat.se
-SEQUENCE:5
-DTSTAMP:20261104T120000Z
+SEQUENCE:6
+DTSTAMP:20261106T180000Z
 DTSTART;TZID=Europe/Stockholm:20270220T080000
 DTEND;TZID=Europe/Stockholm:20270220T110000
 SUMMARY:SoulBeat (preliminärt)
 STATUS:TENTATIVE
 DESCRIPTION:Preliminärt datum, lördag 20 februari 2027. En nykter morgon 
  med levande ljudresa\, meditation och därefter fri dans\, kl 08–11, i f
- estsalen på Ungdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra me
- r. Upplägget formas efter månadens tema. Ta med vattenflaska\, bekväma 
- kläder och något att sitta på.
+ estsalen på Ungdomens hus. Pris 169–420 kr efter inkomst. Upplägget fo
+ rmas efter månadens tema. Ta med vattenflaska\, bekväma kläder och någ
+ ot att sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
 UID:soulbeat-20270327@soulbeat.se
-SEQUENCE:5
-DTSTAMP:20261104T120000Z
+SEQUENCE:6
+DTSTAMP:20261106T180000Z
 DTSTART;TZID=Europe/Stockholm:20270327T080000
 DTEND;TZID=Europe/Stockholm:20270327T110000
 SUMMARY:SoulBeat (preliminärt)
 STATUS:TENTATIVE
 DESCRIPTION:Preliminärt datum, lördag 27 mars 2027. En nykter morgon med 
  levande ljudresa\, meditation och därefter fri dans\, kl 08–11, i fests
- alen på Ungdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra mer. U
- pplägget formas efter månadens tema. Ta med vattenflaska\, bekväma klä
- der och något att sitta på.
+ alen på Ungdomens hus. Pris 169–420 kr efter inkomst. Upplägget formas
+  efter månadens tema. Ta med vattenflaska\, bekväma kläder och något a
+ tt sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
 UID:soulbeat-20270423@soulbeat.se
-SEQUENCE:5
-DTSTAMP:20261104T120000Z
+SEQUENCE:6
+DTSTAMP:20261106T180000Z
 DTSTART;TZID=Europe/Stockholm:20270423T080000
 DTEND;TZID=Europe/Stockholm:20270423T110000
 SUMMARY:SoulBeat (preliminärt)
 STATUS:TENTATIVE
 DESCRIPTION:Preliminärt datum, fredag 23 april 2027. En nykter morgon med 
  levande ljudresa\, meditation och därefter fri dans\, kl 08–11, i fests
- alen på Ungdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra mer. U
- pplägget formas efter månadens tema. Ta med vattenflaska\, bekväma klä
- der och något att sitta på.
+ alen på Ungdomens hus. Pris 169–420 kr efter inkomst. Upplägget formas
+  efter månadens tema. Ta med vattenflaska\, bekväma kläder och något a
+ tt sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
 UID:soulbeat-20270430@soulbeat.se
-SEQUENCE:5
-DTSTAMP:20261104T120000Z
+SEQUENCE:6
+DTSTAMP:20261106T180000Z
 DTSTART;TZID=Europe/Stockholm:20270430T080000
 DTEND;TZID=Europe/Stockholm:20270430T110000
 SUMMARY:SoulBeat (preliminärt)
 STATUS:TENTATIVE
 DESCRIPTION:Preliminärt datum, fredag 30 april 2027. En nykter morgon med 
  levande ljudresa\, meditation och därefter fri dans\, kl 08–11, i fests
- alen på Ungdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra mer. U
- pplägget formas efter månadens tema. Ta med vattenflaska\, bekväma klä
- der och något att sitta på.
+ alen på Ungdomens hus. Pris 169–420 kr efter inkomst. Upplägget formas
+  efter månadens tema. Ta med vattenflaska\, bekväma kläder och något a
+ tt sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
 BEGIN:VEVENT
 UID:soulbeat-20270528@soulbeat.se
-SEQUENCE:5
-DTSTAMP:20261104T120000Z
+SEQUENCE:6
+DTSTAMP:20261106T180000Z
 DTSTART;TZID=Europe/Stockholm:20270528T080000
 DTEND;TZID=Europe/Stockholm:20270528T110000
 SUMMARY:SoulBeat (preliminärt)
 STATUS:TENTATIVE
 DESCRIPTION:Preliminärt datum, fredag 28 maj 2027. En nykter morgon med le
  vande ljudresa\, meditation och därefter fri dans\, kl 08–11, i festsal
- en på Ungdomens hus. Pris 269 kr\, eller 420 kr om du vill bidra mer. Upp
- lägget formas efter månadens tema. Ta med vattenflaska\, bekväma kläde
- r och något att sitta på.
+ en på Ungdomens hus. Pris 169–420 kr efter inkomst. Upplägget formas e
+ fter månadens tema. Ta med vattenflaska\, bekväma kläder och något att
+  sitta på.
 LOCATION:Ungdomens hus\, Malmö
 URL:https://soulbeat.se/
 END:VEVENT
