@@ -299,7 +299,7 @@
   }
 </style>
 </head>
-<!-- Biljettläge: "tidig" visar 99-knappen ovanför 169, 269 och 420 kr. När de 20 tidiga är sålda, ändra till "ordinarie" så försvinner 99-knappen. -->
+<!-- Biljettläge: "tidig" visar 99-knappen ovanför knappen för pris efter inkomst (169–420 kr). När de 20 tidiga är sålda, ändra till "ordinarie" så försvinner 99-knappen. -->
 <body data-biljetter="tidig">
 
 <!-- ===== HERO ===== -->
@@ -327,7 +327,7 @@
           <li><b>Premiär</b><span>fredag 27 november 2026</span></li>
           <li><b>Tid</b><span>08–11</span></li>
           <li><b>Plats</b><span>Ungdomens hus, Malmö</span></li>
-          <li><b>Pris</b><span>99 kr för de första 20, sedan 169, 269 eller 420 kr efter inkomst</span></li>
+          <li><b>Pris</b><span>99 kr för de första 20, sedan väljer du själv mellan 169 och 420 kr efter inkomst</span></li>
         </ul>
         <div class="ctas">
           <a class="btn btn-main" href="#kalender">Kom på premiären</a>
@@ -477,22 +477,18 @@
         <div class="tix">
           <p class="tix-head">Biljetter</p>
           <div class="tix-tidig">
-            <p class="tix-sub">De första 20 biljetterna kostar 99 kr. Är de slut väljer du ett pris nedan.</p>
+            <p class="tix-sub">De första 20 biljetterna kostar 99 kr. Är de slut väljer du pris nedan.</p>
             <div class="tix-btns"><a class="btn btn-main" href="https://buy.stripe.com/aFacN53qWeSR5I55uycEw04?locale=sv">Tidig biljett 99 kr</a></div>
           </div>
           <p class="tix-label">Pris efter inkomst</p>
-          <p class="tix-sub"><span class="tix-ordinarie">De tidiga biljetterna är slut. </span>Du väljer själv vad du betalar, och alla får samma morgon.</p>
-          <div class="tix-btns">
-            <a class="btn btn-main" href="https://buy.stripe.com/28EcN51iO265dax6yCcEw01?locale=sv">Biljett 169 kr</a>
-            <a class="btn btn-main" href="https://buy.stripe.com/5kQfZh2mScKJ3zXcX0cEw02?locale=sv">Biljett 269 kr</a>
-            <a class="btn btn-main" href="https://buy.stripe.com/eVqfZh7Hc2654E1e14cEw03?locale=sv">Biljett 420 kr</a>
-          </div>
+          <p class="tix-sub"><span class="tix-ordinarie">De tidiga biljetterna är slut. </span>Du väljer själv beloppet i kassan, mellan 169 och 420 kr. Alla får samma morgon.</p>
+          <div class="tix-btns"><a class="btn btn-main" href="https://buy.stripe.com/eVq8wPd1w8ut5I58GKcEw05?locale=sv">Välj pris efter inkomst</a></div>
           <p class="tix-note">Alla priser inkluderar 6&nbsp;% moms. Betalningen visas som Tropse AB. <a href="kopvillkor.html">Köpvillkor</a></p>
         </div>
         </div>
 
         <div class="cal-actions">
-          <a class="btn btn-line" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat&dates=20261127T070000Z/20261127T100000Z&details=En%20nykter%20morgon%20med%20levande%20ljudresa%2C%20meditation%20och%20d%C3%A4refter%20fri%20dans.%20Kl%2008%E2%80%9311%2C%20uppl%C3%A4gget%20f%C3%B6ljer%20m%C3%A5nadens%20tema.%20Biljett%2099%20kr%20f%C3%B6r%20de%20f%C3%B6rsta%2020%2C%20sedan%20169%2C%20269%20eller%20420%20kr%20efter%20inkomst.%20Biljetter%20p%C3%A5%20soulbeat.se.&location=Ungdomens+hus%2C+Malm%C3%B6" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
+          <a class="btn btn-line" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat&dates=20261127T070000Z/20261127T100000Z&details=En%20nykter%20morgon%20med%20levande%20ljudresa%2C%20meditation%20och%20d%C3%A4refter%20fri%20dans.%20Kl%2008%E2%80%9311%2C%20uppl%C3%A4gget%20f%C3%B6ljer%20m%C3%A5nadens%20tema.%20Biljett%2099%20kr%20f%C3%B6r%20de%20f%C3%B6rsta%2020%2C%20sedan%20169%E2%80%93420%20kr%20efter%20inkomst.%20Biljetter%20p%C3%A5%20soulbeat.se.&location=Ungdomens+hus%2C+Malm%C3%B6" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
           <a class="btn btn-line" href="https://www.facebook.com/events/1452131226860801/" target="_blank" rel="noopener">Evenemanget på Facebook</a>
           <a class="btn btn-line" href="soulbeat.ics" download>Ladda ner (.ics)</a>
           <a class="btn btn-line" href="webcal://soulbeat.se/soulbeat.ics">Prenumerera på serien</a>
@@ -560,14 +556,10 @@
     <div class="faq">
       <details><summary>När och hur ofta är det?</summary><p>En morgon i månaden, kl <span class="nw">08–11</span>. Premiär fredag 27 november 2026, och vårens datum är preliminära: se Kalender. Du startar dagen med energi och är redo för både jobbet och helgen.</p></details>
       <details><summary>Behöver jag kunna dansa?</summary><p>Nej. Här dansar vi fritt, utan prestation. Det finns inga steg att lära sig och inget rätt eller fel. Du rör dig som det känns.</p></details>
-      <details><summary>Vad kostar det?</summary><p>De första 20 biljetterna kostar 99 kr. Sedan väljer du själv mellan 169, 269 och 420 kr efter inkomst. Alla får samma morgon, och alla priser inkluderar 6&nbsp;% moms.</p>
+      <details><summary>Vad kostar det?</summary><p>De första 20 biljetterna kostar 99 kr. Sedan väljer du själv ett belopp mellan 169 och 420 kr efter inkomst. Alla får samma morgon, och alla priser inkluderar 6&nbsp;% moms.</p>
         <div class="tix">
           <div class="tix-btns tix-tidig"><a class="btn btn-main" href="https://buy.stripe.com/aFacN53qWeSR5I55uycEw04?locale=sv">Tidig biljett 99 kr</a></div>
-          <div class="tix-btns">
-            <a class="btn btn-main" href="https://buy.stripe.com/28EcN51iO265dax6yCcEw01?locale=sv">Biljett 169 kr</a>
-            <a class="btn btn-main" href="https://buy.stripe.com/5kQfZh2mScKJ3zXcX0cEw02?locale=sv">Biljett 269 kr</a>
-            <a class="btn btn-main" href="https://buy.stripe.com/eVqfZh7Hc2654E1e14cEw03?locale=sv">Biljett 420 kr</a>
-          </div>
+          <div class="tix-btns"><a class="btn btn-main" href="https://buy.stripe.com/eVq8wPd1w8ut5I58GKcEw05?locale=sv">Välj pris efter inkomst</a></div>
           <p class="tix-note">Betalningen visas som Tropse AB. <a href="kopvillkor.html">Köpvillkor</a></p>
         </div>
       </details>
