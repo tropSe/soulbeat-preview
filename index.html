@@ -123,10 +123,10 @@
   .louna-grid { display: grid; gap: 34px; align-items: center; }
   .louna-photo { width: min(280px, 78%); aspect-ratio: 3/4; }
   .louna-photo img { object-position: 50% 70%; }
-  .instr { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 14px; margin-top: 30px; }
+  .instr { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px 12px; margin-top: 30px; }
   .instr li { display: grid; gap: 8px; align-content: start; }
   .instr .arch { aspect-ratio: 3/4; width: 100%; max-width: 150px; }
-  .instr .name { font-family: "Instrument Serif", serif; font-size: 1.35rem; line-height: 1.1; }
+  .instr .name { font-family: "Instrument Serif", serif; font-size: clamp(1.05rem, 4vw, 1.35rem); line-height: 1.1; }
 
   /* ============ UPPLEVELSEN ============ */
   .exp-top { display: grid; gap: 26px; align-items: end; }
@@ -263,7 +263,6 @@
     .nav li { display: block; }
     .nav li.keep a { border-bottom-color: transparent; }
     .nav li.keep a:hover { border-bottom-color: var(--rust); }
-    .instr { grid-template-columns: repeat(4, 1fr); }
     .quotes { grid-template-columns: repeat(3, 1fr); gap: 34px; }
     .who { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
     .ev-facts { grid-template-columns: repeat(4, 1fr); }
@@ -304,8 +303,8 @@
   }
 </style>
 </head>
-<!-- Biljettläge: "tidig" visar 99-knappen ovanför knappen för pris efter inkomst (169–420 kr). När de 20 tidiga är sålda, ändra till "ordinarie" så försvinner 99-knappen. -->
-<body data-biljetter="tidig">
+<!-- Biljettläge: "ordinarie" sedan 22 nov 2026, då alla 20 tidiga biljetter (99 kr) var sålda. Bara knappen för pris efter inkomst (169–420 kr) syns. "tidig" visar 99-knappen igen. -->
+<body data-biljetter="ordinarie">
 
 <!-- ===== HERO ===== -->
 <header class="hero" id="top">
@@ -332,7 +331,7 @@
           <li><b>Premiär</b><span>fredag 27 november 2026</span></li>
           <li><b>Tid</b><span>08–11</span></li>
           <li><b>Plats</b><span>Ungdomens hus, Malmö</span></li>
-          <li><b>Pris</b><span>99 kr för de första 20, sedan väljer du själv mellan 169 och 420 kr efter inkomst</span></li>
+          <li><b>Pris</b><span>Du väljer själv mellan 169 och 420 kr efter inkomst</span></li>
         </ul>
         <div class="ctas">
           <a class="btn btn-main" href="#kalender">Kom på premiären</a>
@@ -365,7 +364,7 @@
       <p class="lead">SoulBeat är en nykter morgon med levande musik, meditation och fri dans. Vi ses en morgon i månaden, kl <span class="nw">08–11</span>, och du går därifrån redo för både jobbet och helgen.</p>
     </div>
     <ul class="pillars">
-      <li><span class="sun-dot" style="background:var(--sun-1)"></span><span><b>Levande ljudresa</b><span class="t">Shamantrumma, kora, handpan, gong och levande trummor.</span></span></li>
+      <li><span class="sun-dot" style="background:var(--sun-1)"></span><span><b>Levande ljudresa</b><span class="t">Shamantrumma, kora, gong och levande trummor.</span></span></li>
       <li><span class="sun-dot" style="background:#f2a46f"></span><span><b>Meditation</b><span class="t">Stillhet och andning.</span></span></li>
       <li><span class="sun-dot" style="background:var(--sun-2)"></span><span><b>Fri dans</b><span class="t">Inget rätt eller fel.</span></span></li>
       <li><span class="sun-dot" style="background:#dc6c3e"></span><span><b>Helt nyktert</b><span class="t">Energin kommer från musiken, rörelsen och gemenskapen.</span></span></li>
@@ -382,11 +381,10 @@
     <div>
       <p class="kicker">Musiken och guidningen</p>
       <h2 class="h2">Louna håller <i>rummet</i></h2>
-      <p class="lead">Louna leder ljudresan och meditationen. Med shamantrumma, kora, handpan, gong och levande trummor bär musiken dig från första steget till sista andetaget.</p>
+      <p class="lead">Louna leder ljudresan och meditationen. Med shamantrumma, kora, gong och levande trummor bär musiken dig från första steget till sista andetaget.</p>
       <ul class="instr">
         <li><div class="arch"><img src="bilder/louna-ponyo-ramtrummor.webp" alt="Louna spelar trumma" width="1400" height="1120" loading="lazy" decoding="async" style="object-position:30% 50%" /></div><span class="name">Shamantrumma</span></li>
         <li><div class="arch"><img src="bilder/louna-kora.webp" alt="Louna spelar kora omgiven av grönska" width="1304" height="1304" loading="lazy" decoding="async" /></div><span class="name">Kora</span></li>
-        <li><div class="arch"><img src="bilder/louna-handpan.webp" alt="Louna spelar handpan i skogen" width="750" height="1334" loading="lazy" decoding="async" style="object-position:50% 65%" /></div><span class="name">Handpan</span></li>
         <li><div class="arch"><img src="bilder/louna-gong-ljus.webp" alt="Louna vid gongen i ett ljust rum" width="933" height="1400" loading="lazy" decoding="async" /></div><span class="name">Gong</span></li>
       </ul>
     </div>
@@ -412,7 +410,7 @@
       <li><div class="dot"><svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="21" fill="#f6c08f"/></svg></div>
         <div><span class="step">Först</span><h3>Landning</h3><p>Incheckning och en mjuk, trygg introduktion.</p></div></li>
       <li><div class="dot"><svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="21" fill="#f2a46f"/></svg></div>
-        <div><span class="step">Morgonens kärna</span><h3>Ljudresa</h3><p>Louna spelar levande på shamantrumma, kora, handpan och gong.</p></div></li>
+        <div><span class="step">Morgonens kärna</span><h3>Ljudresa</h3><p>Louna spelar levande på shamantrumma, kora och gong.</p></div></li>
       <li><div class="dot"><svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="21" fill="#ec8a52"/></svg></div>
         <div><span class="step">Sedan</span><h3>Meditation</h3><p>Guidad meditation med stillhet och andning.</p></div></li>
       <li><div class="dot"><svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="21" fill="#dc6c3e"/></svg></div>
@@ -475,7 +473,7 @@
           <li><small>När</small><strong>Fre 27 nov</strong></li>
           <li><small>Tid</small><strong>08–11</strong></li>
           <li><small>Plats</small><strong>Ungdomens hus</strong></li>
-          <li><small>Pris</small><strong>169–420 kr</strong><span>du väljer efter inkomst, de första 20 för 99 kr</span></li>
+          <li><small>Pris</small><strong>169–420 kr</strong><span>du väljer efter inkomst</span></li>
         </ul>
         <p class="cal-text">Premiär för SoulBeat. En nykter morgon med levande ljudresa, meditation och därefter fri dans, kl <span class="nw">08–11</span>, i festsalen på Ungdomens hus. Upplägget formas efter månadens tema, och vi avslutar i loungen.</p>
 
@@ -494,7 +492,7 @@
         </div>
 
         <div class="cal-actions">
-          <a class="btn btn-line" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat&dates=20261127T070000Z/20261127T100000Z&details=En%20nykter%20morgon%20med%20levande%20ljudresa%2C%20meditation%20och%20d%C3%A4refter%20fri%20dans.%20Kl%2008%E2%80%9311%2C%20uppl%C3%A4gget%20f%C3%B6ljer%20m%C3%A5nadens%20tema.%20Biljett%2099%20kr%20f%C3%B6r%20de%20f%C3%B6rsta%2020%2C%20sedan%20169%E2%80%93420%20kr%20efter%20inkomst.%20Biljetter%20p%C3%A5%20soulbeat.se.&location=Ungdomens+hus%2C+Malm%C3%B6" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
+          <a class="btn btn-line" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=SoulBeat&dates=20261127T070000Z/20261127T100000Z&details=En%20nykter%20morgon%20med%20levande%20ljudresa%2C%20meditation%20och%20d%C3%A4refter%20fri%20dans.%20Kl%2008%E2%80%9311%2C%20uppl%C3%A4gget%20f%C3%B6ljer%20m%C3%A5nadens%20tema.%20Du%20v%C3%A4ljer%20pris%20efter%20inkomst%2C%20169%E2%80%93420%20kr.%20Biljetter%20p%C3%A5%20soulbeat.se.&location=Ungdomens+hus%2C+Malm%C3%B6" target="_blank" rel="noopener">Lägg till i Google Kalender</a>
           <a class="btn btn-line" href="https://www.facebook.com/events/1452131226860801/" target="_blank" rel="noopener">Evenemanget på Facebook</a>
           <a class="btn btn-line" href="soulbeat.ics" download>Ladda ner (.ics)</a>
           <a class="btn btn-line" href="webcal://soulbeat.se/soulbeat.ics">Prenumerera på serien</a>
@@ -562,7 +560,7 @@
     <div class="faq">
       <details><summary>När och hur ofta är det?</summary><p>En morgon i månaden, kl <span class="nw">08–11</span>. Premiär fredag 27 november 2026, och vårens datum är preliminära: se Kalender. Du startar dagen med energi och är redo för både jobbet och helgen.</p></details>
       <details><summary>Behöver jag kunna dansa?</summary><p>Nej. Här dansar vi fritt, utan prestation. Det finns inga steg att lära sig och inget rätt eller fel. Du rör dig som det känns.</p></details>
-      <details><summary>Vad kostar det?</summary><p>De första 20 biljetterna kostar 99 kr. Sedan väljer du själv ett belopp mellan 169 och 420 kr efter inkomst. Alla får samma morgon, och alla priser inkluderar 6&nbsp;% moms.</p>
+      <details><summary>Vad kostar det?</summary><p>Du väljer själv ett belopp mellan 169 och 420 kr efter inkomst. Alla får samma morgon, och alla priser inkluderar 6&nbsp;% moms.</p>
         <div class="tix">
           <div class="tix-btns tix-tidig"><a class="btn btn-main" href="https://buy.stripe.com/aFacN53qWeSR5I55uycEw04?locale=sv">Tidig biljett 99 kr</a></div>
           <div class="tix-btns"><a class="btn btn-main" href="https://buy.stripe.com/eVq8wPd1w8ut5I58GKcEw05?locale=sv">Välj pris efter inkomst</a></div>
